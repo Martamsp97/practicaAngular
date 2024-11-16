@@ -1,6 +1,6 @@
 <div class="row container">
     <div class="col-12 col-sm-7 py-5">
-        <form [formGroup]="newProduct" (ngSubmit)="onSubmit()">
+        <form [formGroup]="newPost" (ngSubmit)="onSubmit()">
             <div class="mb-3">
                 <label for="title" class="form-label">Título</label>
                 <input type="text" class="form-control" name="title" placeholder="¿Cuál es el título de tu post?" formControlName="titulo">
@@ -16,11 +16,6 @@
             <div class="mb-3">
                 <label for="imagen" class="form-label">Imagen</label>
                 <input type="text" class="form-control" name="imagen" placeholder="¿Quieres subir una imagen? Introduce aquí su url" formControlName="imagen">
-            </div>
-            <div class="mb-3">
-                <label for="fecha" class="form-label">Fecha</label>
-                <input type="date" class="form-control" name="fecha" placeholder="¿Qué día es hoy?"
-                    formControlName="fecha">
             </div>
             <div class="mb-3">
                 <label class="form-label" for="categoria">Categoría</label>
