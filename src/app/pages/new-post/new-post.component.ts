@@ -44,7 +44,10 @@ export class NewPostComponent {
       this.PostsServicio.createPost(this.newPost.value)
       console.log(nuevoPost)
       Swal.fire({ title: 'Nueva publicación', text: '¡Publicación creada con éxito!', icon: 'success' })
+      localStorage.setItem
       this.router.navigateByUrl('')
+
+
 
     }
     

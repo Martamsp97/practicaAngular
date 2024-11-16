@@ -8,6 +8,8 @@ export class PostsService {
 
   private posts: IPosts[] = []
 
+
+
   getAll() {
     return this.posts
   }
@@ -16,5 +18,9 @@ export class PostsService {
   }
   getByCategory(categoria: string): IPosts[] {
     return this.posts.filter(post => post.categoria === categoria);
+  }
+
+  isPosted(): boolean {
+    return localStorage.getItem('post') ? true : false
   }
 }
