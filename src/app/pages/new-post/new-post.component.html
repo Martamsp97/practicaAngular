@@ -1,1 +1,39 @@
-<p>new-post works!</p>
+<div class="row container">
+    <div class="col-12 col-sm-7 py-5">
+        <form [formGroup]="newProduct" (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+                <label for="title" class="form-label">Título</label>
+                <input type="text" class="form-control" name="title" placeholder="¿Cuál es el título de tu post?" formControlName="titulo">
+            </div>
+            <div class="mb-3">
+                <label for="texto" class="form-label">Texto</label>
+                <textarea type="text" class="form-control" rows="3" name="texto" placeholder="¿Qué nos quieres contar hoy?" formControlName="texto"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="autor" class="form-label">Autor</label>
+                <input type="text" class="form-control" name="autor" placeholder="¿Cuál es tu pseudónmo?" formControlName="autor">
+            </div>
+            <div class="mb-3">
+                <label for="imagen" class="form-label">Imagen</label>
+                <input type="text" class="form-control" name="imagen" placeholder="¿Quieres subir una imagen? Introduce aquí su url" formControlName="imagen">
+            </div>
+            <div class="mb-3">
+                <label for="fecha" class="form-label">Fecha</label>
+                <input type="date" class="form-control" name="fecha" placeholder="¿Qué día es hoy?"
+                    formControlName="fecha">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="categoria">Categoría</label>
+                <select name="categoría" formControlName="categoria" class="form-select">
+                    <option value="">Selecciona una categoria</option>
+                    <option value="musica">Música</option>
+                    <option value="literatura">Literatura</option>
+                    <option value="fotografia">Fotografía</option>
+                    <option value="pintura">Pintura</option>
+                    <option value="diseno">Diseño</option>
+                </select>
+            </div>
+            <input type="submit" value="Publicar" class="btn btn-outline-dark">
+        </form>
+    </div>
+</div>
