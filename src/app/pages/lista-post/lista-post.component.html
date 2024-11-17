@@ -1,1 +1,29 @@
 <h2>{{title}}</h2>
+
+<div class="my-4">
+    <div class="container">
+    <label class="form-label">Filtra por categoría</label>
+    <select class="form-select" (change)="onChange($event)">
+        <option>Todas</option>
+        @for (cat of arrCategorias; track cat) {
+        <option>{{cat}}</option>
+        }
+    </select>
+    </div>
+
+<div class="container">
+<section class="artistas">
+    @for (artista of arrArtistas; track $index ) {
+    <article class="card mb-3">
+        <figure class="card-img-top">
+            <img [src]="artista.imagen">
+        </figure>
+        <div class="card-body">
+            <h3 class="card-title">{{artista.titulo}}</h3>
+            <p class="card-text">{{artista.texto}}</p>
+            <p class="card-text"><small class="text-muted">{{artista.autor}}, {{artista.fecha}}</small></p>
+        </div>
+    </article>
+    }
+</section>
+</div>

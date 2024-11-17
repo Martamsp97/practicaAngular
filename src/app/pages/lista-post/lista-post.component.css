@@ -1,0 +1,35 @@
+.container {
+    max-width: 1800px;
+    margin: 0 auto;
+}
+.artistas {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    margin: 6rem 10rem;
+}
+
+article {
+    width: 100%;
+    padding: 2rem;
+    background-color: lavenderblush;
+    border-radius: 20px;
+    border: 1px solid palevioletred;
+
+    figure {
+        display: block;
+    overflow: hidden;
+        margin: 0 auto;
+        height:500px;
+       
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+          
+           
+        }
+    }
+}
