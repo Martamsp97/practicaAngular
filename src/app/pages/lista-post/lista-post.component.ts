@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './lista-post.component.css'
 })
 export class ListaPostComponent {
-
+title:string =""
 }
