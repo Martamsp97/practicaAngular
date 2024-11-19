@@ -69,3 +69,15 @@ p  .text-muted {
     font-family: "Montserrat", sans-serif;
     border: none;
 }
+
+.btn-outline-dark {
+    color: rgb(207, 193, 193);
+    border: 0.0625rem solid rgb(207, 193, 193);
+    margin: 0.625rem 0rem;
+    padding: 0.625rem 1.875rem;
+
+    &:hover {
+        background-color: rgb(207, 193, 193);
+        color: rgb(79, 51, 61);
+    }
+}

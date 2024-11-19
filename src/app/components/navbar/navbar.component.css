@@ -6,11 +6,12 @@ nav {
 
 figure {
     width: 18.75rem;
-    height: 12.5rem;
+    height: 8rem;
     background-image: url('../../../assets/images/logo\ amazona.png');
     background-size: contain;
     background-position: center;
     margin-top:1.25rem;
+    background-repeat: no-repeat;
 }
 
 a {

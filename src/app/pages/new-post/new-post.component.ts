@@ -27,7 +27,6 @@ export class NewPostComponent {
     ]),
     autor: new FormControl(),
     imagen: new FormControl(),
-    fecha: new FormControl(),
     categoria: new FormControl('', [
       Validators.required
     ])
@@ -37,14 +36,15 @@ export class NewPostComponent {
     if (this.newPost.valid) {
       const nuevoPost: IPosts = {
         ...this.newPost.value,
-        _id: '',
+        id: '',
         fecha: new Date()
       };
 
-      this.PostsServicio.createPost(this.newPost.value)
+      this.PostsServicio.createPost(nuevoPost);
+
       console.log(nuevoPost)
       Swal.fire({ title: 'Nueva publicación', text: '¡Publicación creada con éxito!', icon: 'success' })
-      localStorage.setItem
+    
       this.router.navigateByUrl('')
 
 
