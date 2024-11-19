@@ -1,35 +1,71 @@
 .container {
-    max-width: 1800px;
+    max-width: 112.5rem;
     margin: 0 auto;
 }
+
 .artistas {
     display: grid;
     gap: 1rem;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
-    margin: 6rem 10rem;
 }
+
 
 article {
     width: 100%;
     padding: 2rem;
-    background-color: lavenderblush;
+    color: rgb(207, 193, 193);
+    background-color: transparent;
     border-radius: 20px;
-    border: 1px solid palevioletred;
+    border: 0.0625rem solid  rgb(207, 193, 193);
 
     figure {
         display: block;
-    overflow: hidden;
+        overflow: hidden;
         margin: 0 auto;
-        height:500px;
-       
+        height: 31.25rem;
+
 
         img {
             width: 100%;
             height: auto;
             display: block;
-          
-           
+
+
         }
     }
+}
+
+.section,
+.my-4 {
+    background-color: rgb(79, 51, 61);
+}
+
+.input {
+    width: 20%;
+    padding: 1.875rem 0;
+
+    .form-label {
+        color: rgb(207, 193, 193);
+        font-family: "Gruppo",
+            sans-serif;
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+
+    .form-select {
+        font-family: "Montserrat", sans-serif;
+        border: none;
+
+    }
+}
+
+h3 {
+    font-family: "Gruppo", sans-serif;
+    font-weight: 400;
+}
+
+p  .text-muted {
+    font-family: "Montserrat", sans-serif;
+    border: none;
 }

@@ -1,12 +1,42 @@
 input.ng-invalid.ng-touched {
-    border: 1px solid lightcoral;
+    border: 0.0625rem solid lightcoral;
 }
 
 input.ng-valid.ng-touched {
-    border: 1px solid greenyellow;
+    border: 0.0625rem solid greenyellow;
 }
 
 .error {
     font-size: 0.8rem;
     color: salmon;
+}
+
+.row {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.btn-outline-dark {
+    color: rgb(207, 193, 193);
+    border: 0.0625rem solid rgb(207, 193, 193);
+    margin: 0.625rem 0rem;
+    padding: 0.625rem 1.875rem;
+
+    &:hover {
+        background-color: rgb(207, 193, 193);
+        color: rgb(79, 51, 61);
+    }
+}
+form{
+    margin:2.25rem;
+}
+.form-label {
+    color: rgb(207, 193, 193);
+    font-size: 1.2rem;
+    font-family: "Gruppo", sans-serif;
+    font-weight: 400;
+
+}
+.form-input{
+    font-family: "Montserrat", sans-serif;
 }

@@ -1,0 +1,29 @@
+nav {
+    padding: 0.625rem 0.625rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+figure {
+    width: 18.75rem;
+    height: 12.5rem;
+    background-image: url('../../../assets/images/logo\ amazona.png');
+    background-size: contain;
+    background-position: center;
+    margin-top:1.25rem;
+}
+
+a {
+    display: inline-block;
+    align-content: center;
+    text-decoration: none;
+    color: black;
+    font-family: "Gruppo", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-right: 1.25rem;
+    position: relative;
+    &:hover{
+        color:rgb(151, 106, 122);
+    }
+}
