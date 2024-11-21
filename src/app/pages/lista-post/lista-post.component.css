@@ -10,6 +10,16 @@
     justify-content: space-between;
 }
 
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.card-text {
+    margin-bottom: 0px;
+}
 
 article {
     width: 100%;
@@ -17,13 +27,13 @@ article {
     color: rgb(207, 193, 193);
     background-color: transparent;
     border-radius: 20px;
-    border: 0.0625rem solid  rgb(207, 193, 193);
+    border: 0.0625rem solid rgb(207, 193, 193);
 
     figure {
         display: block;
         overflow: hidden;
         margin: 0 auto;
-        height: 31.25rem;
+        height: 25rem;
 
 
         img {
@@ -42,7 +52,7 @@ article {
 }
 
 .input {
-    width: 20%;
+    width: 33%;
     padding: 1.875rem 0;
 
     .form-label {
@@ -61,11 +71,12 @@ article {
 }
 
 h3 {
+
     font-family: "Gruppo", sans-serif;
     font-weight: 400;
 }
 
-p  .text-muted {
+p .text-muted {
     font-family: "Montserrat", sans-serif;
     border: none;
 }
@@ -79,5 +90,75 @@ p  .text-muted {
     &:hover {
         background-color: rgb(207, 193, 193);
         color: rgb(79, 51, 61);
+    }
+}
+
+@media (max-width: 1350px) {
+    .artistas {
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .input {
+        width: 50%;
+    }
+
+    article {
+        figure {
+            height: 35rem;
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .artistas {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+
+    }
+
+    .input {
+        width: 50%;
+    }
+
+    article {
+        figure {
+            height: 20rem;
+        }
+    }
+
+    .section {
+
+        margin: 0 50px;
+    }
+}
+
+@media (max-width: 750px) {
+    .artistas {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    article {
+        figure {
+            height: 25rem;
+            text-align: center;
+            position: relative;
+
+            img {
+                position: absolute;
+                top: -100px;
+            }
+        }
+    }
+
+    .section {
+
+        margin: 0 50px;
     }
 }
